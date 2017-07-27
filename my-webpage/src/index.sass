@@ -1,0 +1,395 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'roboto'
+.container-global
+  width: 100%
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  @media screen and (max-width: 550px) and (min-width: 320px)
+    flex-flow: column wrap
+
+  .container
+    width: 100%
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    .top-row
+      margin-top: 5px
+      padding-bottom: 5px
+      width: 90%
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-between
+      border-bottom: .5px solid lightgray
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        flex-flow: column wrap
+      .top-row-1
+        flex: 1
+        display: flex
+        flex-flow: row wrap
+        justify-content: flex-start
+        p
+          padding-right: 80px
+          color: #7f848e
+        @media screen and (max-width: 900px)
+          p
+            font-size: 12px
+        @media screen and (max-width: 550px) and (min-width: 320px)
+          justify-content: space-around
+          margin-top: 10px
+          margin-bottom: 10px
+          p
+            padding-right: 0px
+      .top-row-2
+        flex: 1
+        display: flex
+        flex-flow: row wrap
+        justify-content: flex-end
+        @media screen and (max-width: 900px)
+          align-items: center
+        a
+          color: black
+        i
+          padding-left: 30px
+        @media screen and (max-width: 550px) and (min-width: 320px)
+          width: 100%
+          justify-content: space-around
+          i
+            padding-left: 0px
+    .middle-row
+      margin-top: 25px
+      padding-bottom: 5px
+      width: 90%
+      display: flex
+      flex-flow:  row wrap
+      justify-content: space-around
+      align-items: center
+      @media screen and (max-width: 900px)
+        display: flex
+        flex-flow: column wrap
+        margin-top: 10px
+
+      .middle-row-1
+        //flex: 1
+        width: 20%
+        @media screen and (max-width: 900px)
+          width: 100%
+          text-align: center
+          margin-bottom: 10px
+        @media screen and (max-width: 1300px) and (min-width: 901px)
+          width: 100%
+          text-align: center
+          margin-bottom: 10px
+      .middle-row-2
+        width: 80%
+        //flex: 1
+        display: flex
+        flex-flow: row wrap
+        @media screen and (max-width: 900px)
+          width: 100%
+          a
+            font-size: 10px
+        i
+          font-size: 18px
+        @media screen and (max-width: 550px) and (min-width: 320px)
+          flex-flow: column
+          a
+            width: 100%
+            padding: 10px
+            text-align: center
+          i
+            display: none
+        @media screen and (max-width: 1300px) and (min-width: 901px)
+          min-width: 901px
+          a
+            font-size: 12px
+
+        .menu
+          width: 100%
+          display: flex
+          flex-flow: row wrap
+          justify-content: space-between
+          align-items: baseline
+          font-size: 14px
+          a
+            text-decoration: none
+            color: black
+    .bottom-row
+      background-color: #ec1271
+      width: 100%
+      height: 60px
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-end
+      align-items: flex-end
+      p
+        padding: 0px 90px 10px 0px
+        color: white
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        justify-content: center
+        p
+          padding: 0px 0px 20px 0px
+  .aside
+    background-color: white
+    display: flex
+    flex-flow: column wrap
+    width: 15%
+    margin-right: 2%
+    @media screen and (max-width: 900px)
+      width: 30%
+    @media screen and (max-width: 550px) and (min-width: 320px)
+      width: 100%
+      justify-content: center
+    @media screen and (max-width: 1300px) and (min-width: 901px)
+      width: 30%
+    .aside-header
+      display: flex
+      flex-flow: row wrap
+      padding: 20px 0px 20px 10px
+      margin-bottom: 10px
+      p
+        padding-left: 10px
+    .aside-search
+      display: flex
+      flex-flow: row no-wrap
+      justify-content:flex-start
+      align-items: center
+      margin-bottom: 20px
+      input
+        height: 35px
+        width: 87%
+        border-radius: 3px 0px 0px 3px
+        border: 1px solid lightgray
+      i
+        background-color: 	#8f0202
+        height: 35px
+        width: 37px
+        color: white
+        padding: 8px 0px 0px 12px
+        border-radius: 0px 3px 3px 0px
+      @media screen and (max-width: 900px)
+        input
+          height: 30px
+          width: 90%
+        i
+          height: 30px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        input
+          border-radius: 0px
+          width: 100%
+        i
+          border-radius: 0px
+
+    .aside-fecha
+      .aside-title
+        background-color: #8f0202
+        color: white
+      p
+
+        height: 40px
+        padding-top: 10px
+        padding-left: 15px
+        a
+
+          color: black
+          text-decoration: none
+      @media screen and (max-width: 900px)
+        p
+          height: 30px
+          padding-top: 5px
+          a
+            font-size: 12px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        p
+          text-align: center
+
+    .aside-documento
+      .aside-title
+        background-color: #ec1271
+        color: white
+      p
+
+        height: 40px
+        padding-top: 10px
+        padding-left: 15px
+        a
+          color: black
+          text-decoration: none
+      @media screen and (max-width: 900px)
+        p
+          height: 30px
+          padding-top: 7px
+          font-size: 14px
+          a
+            font-size: 12px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        p
+          text-align: center
+    .aside-tema
+      .aside-title
+        background-color: #8f0202
+        color: white
+      p
+
+        height: 40px
+        padding-top: 10px
+        padding-left: 15px
+      .par-1
+        padding-bottom: 52px
+      .par-2
+        padding-bottom: 70px
+      a
+        color: black
+        text-decoration: none
+      @media screen and (max-width: 900px)
+        p
+          height: 30px
+          padding-top: 5px
+          a
+            font-size: 12px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        p
+          text-align: center
+        .par-1
+          padding-bottom: 30px
+        .par-2
+          padding-bottom: 45px
+    .aside-cuenta
+      border-top: 1px solid lightgray
+      .aside-title-2
+        color: black
+        margin-top: 15px
+      p
+
+        height: 40px
+        padding-top: 10px
+        padding-left: 15px
+        a
+
+          color: black
+          text-decoration: none
+          padding-left: 20px
+      @media screen and (max-width: 900px)
+        p
+          height: 30px
+          padding-top: 5px
+          a
+            font-size: 12px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        p
+          text-align: center
+          a
+            padding-left: 0px
+    .aside-rss
+      .aside-title-2
+        color: black
+      p
+
+        height: 40px
+        padding-top: 10px
+        padding-left: 15px
+        i
+          background-color: orange
+          color: white
+          margin-left: 20px
+          width: 16px
+          height: 16px
+          border-radius: 3px
+        a
+
+          color: black
+          text-decoration: none
+          padding-left: 5px
+      @media screen and (max-width: 900px)
+        p
+          height: 30px
+          padding-top: 5px
+          a
+            font-size: 12px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        p
+          text-align: center
+          i
+            margin-left: 0px
+  .main-content
+
+    display: flex
+    flex-flow: row wrap
+    width: 70%
+    margin-top: 45px
+    @media screen and (max-width: 900px)
+      width: 60%
+    @media screen and (max-width: 550px) and (min-width: 320px)
+      width: 100%
+      text-align: left
+    @media screen and (max-width: 1300px) and (min-width: 901px)
+      width: 60%
+    .main-top
+      margin-top: 20px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        padding: 0px 30px
+    .main-title
+      margin-bottom: 20px
+      font-size: 20px
+      @media screen and (max-width: 900px)
+        font-size: 16px
+    .main-middle
+      margin-bottom: 40px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        padding: 0px 30px
+    .main-middle-list
+      display: flex
+      flex-flow: column wrap
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        padding: 0px 0px
+      li
+        list-style: none
+        a
+          display: inline-block
+          align-items: center
+          text-decoration: none
+          color: black
+          font-size: 18px
+          i
+            font-size: 30px
+            padding-right: 20px
+      @media screen and (max-width: 900px)
+        li
+          a
+            font-size: 13px
+            margin-bottom: 10px
+            i
+              font-size: 18px
+              padding-right: 7px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        li
+          a
+    .main-bottom
+      .text-title
+        color: #8f0202
+        font-size: 18px
+        margin-bottom: 10px
+        @media screen and (max-width: 900px)
+          font-size: 14px
+      @media screen and (max-width: 550px) and (min-width: 320px)
+        padding: 0px 30px
+      .text-middle-gray
+        color: gray
+        font-size: 14px
+        @media screen and (max-width: 900px)
+          font-size: 10px
+      .text-middle
+        color: black
+        font-size: 14px
+        margin-bottom: 10px
+        @media screen and (max-width: 900px)
+          font-size: 10px
+      .text-middle-2
+        color: #8f0202
+        font-size: 14px
+        margin-bottom: 10px
+        @media screen and (max-width: 900px)
+          font-size: 10px
